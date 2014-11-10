@@ -4,6 +4,10 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 
+app.get('/', function(req, res){
+	res.send('This is Home Page of Web Scrap')
+})
+
 app.get('/scrape/:movie_id', function(req, res){
 	id = req.params.movie_id;
 	url = "http://www.imdb.com/title/" + id;
