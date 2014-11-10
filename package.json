@@ -1,0 +1,14 @@
+{
+	"name":"Webpage-Scrape",
+	"author": "Amal",
+	"version":"0.0.1",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express":"*",
+		"request":"*",
+		"cheerio":"*"
+	}
+}
