@@ -49,7 +49,9 @@ app.get('/scrape/:movie_id', function(req, res){
 	})
 })
 
-app.listen(8081);
-console.log('app listening in 8081');
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})
+
 
 exports = module.exports = app;
